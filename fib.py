@@ -21,10 +21,11 @@ def is_fib(n: int) -> None:
         print(f"{n} \033[31mnão é parte da sequencia!\033[39m")
 
 
-num: int = 0
+if __name__ == "__main__":
+    num: int = 0
 
-try:
-    int(input("Número: "))
-    is_fib(num)
-except ValueError:
-    print("Entrada inválida")
+    try:
+        num = int(input("Número: "))
+        is_fib(num)
+    except ValueError:
+        print("Entrada inválida")
