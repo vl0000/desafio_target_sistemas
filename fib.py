@@ -1,4 +1,4 @@
-def fibonacci(n: int):
+def fibonacci(n: int) -> int:
     """A função calculará a sequencia de Fibonacci até n (inclusivo)"""
     if n < 2:
         return n
@@ -6,7 +6,10 @@ def fibonacci(n: int):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-def is_fib(n: int):
+def is_fib(n: int) -> None:
+    """
+    Checa se um número é parte da sequencia de Fibonacci e informa o resultado
+    """
     buff: list = []
     for i in range(n + 2):
         buff.append(fibonacci(i))
