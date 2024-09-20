@@ -1,5 +1,5 @@
 def fibonacci(n: int) -> int:
-    """A função calculará a sequencia de Fibonacci até n (inclusivo)"""
+    """A função calculará a sequencia de Fibonacci até n"""
     if n < 2:
         return n
     else:
